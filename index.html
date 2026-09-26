@@ -13,18 +13,15 @@
   <meta property="og:url" content="https://smartrenocalc.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SmartRenoCalc">
-  <meta property="og:image" content="https://smartrenocalc.com/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://smartrenocalc.com/web-app-manifest-512x512.png">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Home Renovation Cost Calculator 2026 | SmartRenoCalc">
   <meta name="twitter:description" content="Get an instant, ZIP-adjusted cost estimate for your next renovation project. Free, no signup, 2026 pricing.">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 
   <script type="application/ld+json">
   {
@@ -36,6 +33,9 @@
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Any (Web-based)",
     "browserRequirements": "Requires JavaScript",
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true,
+    "publisher": { "@type": "Organization", "name": "SmartRenoCalc", "url": "https://smartrenocalc.com/" },
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
   }
   </script>
@@ -44,10 +44,25 @@
     "@context": "https://schema.org",
     "@type": "FinancialProduct",
     "name": "SmartRenoCalc Home Renovation Cost Estimate",
+    "url": "https://smartrenocalc.com/",
     "description": "A free planning-stage cost estimate for home renovation projects, adjusted for project type, square footage, finish quality, and US region.",
     "provider": { "@type": "Organization", "name": "SmartRenoCalc", "url": "https://smartrenocalc.com/" },
-    "areaServed": "US",
-    "feesAndCommissionsSpecification": "Free — no fees or signup required"
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "feesAndCommissionsSpecification": "Free, with no fees or signup required."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How accurate is the SmartRenoCalc estimate?", "acceptedAnswer": { "@type": "Answer", "text": "It's built from published 2026 national renovation cost data, adjusted for your project type, square footage, quality tier, and region. Treat it as a realistic planning range, not a number you can hand a contractor and expect them to match." } },
+      { "@type": "Question", "name": "Why does my ZIP code change the estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Labor rates, material delivery costs, and permit fees shift by region, sometimes by 30% or more. We apply a regional multiplier based on the first digit of your ZIP code so the estimate reflects your market instead of a national average." } },
+      { "@type": "Question", "name": "What's the difference between the three quality tiers?", "acceptedAnswer": { "@type": "Answer", "text": "Budget keeps your existing layout with stock materials. Mid-Range adds semi-custom materials and minor layout changes. High-End allows custom materials and structural changes. Each tier carries its own cost range and its own typical resale return." } },
+      { "@type": "Question", "name": "Does this replace a contractor's quote?", "acceptedAnswer": { "@type": "Answer", "text": "No. Think of it as the number you walk in with, not the number you walk out with. A licensed contractor's bid accounts for your home's actual condition, which no calculator can see from the outside." } },
+      { "@type": "Question", "name": "Do you save or share my ZIP code or project details?", "acceptedAnswer": { "@type": "Answer", "text": "No. The calculator runs entirely in your browser. Nothing you type is ever sent to a server, whether that's your ZIP code, square footage, or project type." } },
+      { "@type": "Question", "name": "How often is the cost data updated?", "acceptedAnswer": { "@type": "Answer", "text": "About once a year. Renovation costs shift with material and labor trends, but not fast enough to justify a live pricing feed for what's meant to stay a free, browser-only tool." } }
+    ]
   }
   </script>
  <!-- Google tag (gtag.js) -->
@@ -60,31 +75,16 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4806220450595674"
      crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Smartrenocalc.com" />
-<link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Smartrenocalc.com" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Smart<span>Reno</span>Calc</a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Calculator</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header id="site-header" class="site-header"></header>
 
   <div class="ad-slot ad-slot--header">
     <!-- Google AdSense: replaceca-pub-4806220450595674 and data-ad-slot with your real values after AdSense approval -->
@@ -320,6 +320,13 @@
                   <button type="button" id="reset-btn" class="btn btn--secondary">Start Over</button>
                 </div>
 
+                <!-- UI shell only: contractor matching is not wired up yet. Replace the disabled button when it is. -->
+                <div class="contractor-cta" id="contractor-cta">
+                  <h3>Talk to a local contractor</h3>
+                  <p>Take this estimate to licensed pros near you and compare real bids. Contractor matching is coming soon.</p>
+                  <button type="button" class="btn btn--primary btn--block" disabled>Find Local Contractors (Coming Soon)</button>
+                </div>
+
               </div>
             </section>
           </div>
@@ -337,25 +344,65 @@
         <div class="how-it-works__grid">
           <div class="how-card">
             <div class="how-card__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M4 15l4-4 3 3 5-6 4 4"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19h16M4 15l4-4 3 3 5-6 4 4"/></svg>
             </div>
             <h3>Real 2026 industry data</h3>
             <p>Cost ranges are sourced from published national renovation cost data and reviewed annually.</p>
           </div>
           <div class="how-card">
             <div class="how-card__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
             </div>
             <h3>ZIP-adjusted</h3>
             <p>Costs shift based on regional labor rates and material pricing across 10 US regions.</p>
           </div>
           <div class="how-card">
             <div class="how-card__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
             <h3>Instant and private</h3>
             <p>Every calculation runs in your browser. Nothing you enter is ever sent to a server or stored.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article" id="renovation-guide">
+      <div class="container">
+        <div class="article__inner">
+
+          <h2>How SmartRenoCalc Builds Your Estimate</h2>
+          <p>Every number above comes from four inputs working together: your project type, your square footage, your ZIP code, and the quality tier you choose. None of the four is decorative — each one moves the final range in a specific, explainable way, and understanding what each one is doing makes a contractor's real bid much easier to sanity-check once quotes start coming in.</p>
+
+          <h3>Why your ZIP code changes the number</h3>
+          <p>A kitchen remodel priced in a small Midwest town and the identical remodel priced in coastal California can differ by 30 to 40 percent before either homeowner has chosen a single tile. Labor explains most of that gap: contractors, electricians, and plumbers set rates based on the market they work in, and that rate flows into every line item on a bid. Material delivery costs and permit fees push the number further in the same direction. SmartRenoCalc uses the first digit of your ZIP code to sort your project into one of ten U.S. regions, each carrying its own cost multiplier, so the range you see leans toward your actual market. Our <a href="/blog/zip-code-renovation-costs">ZIP code cost guide</a> lists all ten multipliers if you want the full breakdown.</p>
+
+          <h3>Budget, Mid-Range, or High-End: what each tier actually buys</h3>
+          <p>The three tiers aren't marketing labels. They map to real differences in materials, fixtures, and how much of your existing layout stays put.</p>
+          <ul>
+            <li><strong>Budget / Essential</strong> keeps your current layout, uses stock materials, and sticks to standard fixtures. It's the fastest tier, and it typically returns the highest share of its cost at resale.</li>
+            <li><strong>Mid-Range / Standard</strong> adds semi-custom materials, upgraded fixtures, and minor layout adjustments. Most homeowners land here.</li>
+            <li><strong>High-End / Luxury</strong> allows custom materials, premium fixtures, and structural or layout changes. It delivers the biggest transformation, but it also carries the lowest percentage return at resale.</li>
+          </ul>
+          <p>If resale value matters to your decision, our <a href="/blog/renovation-roi-breakdown">ROI breakdown</a> shows how much each tier tends to recoup, project by project.</p>
+
+          <h3>What the total includes, and what it doesn't</h3>
+          <p>Behind the scenes, your total splits roughly 45% materials and 55% labor, plus a 12% contingency buffer for the surprises every renovation runs into. Optional add-ons like permits, structural work, and smart home wiring get priced separately so you can see exactly what each one is contributing. What the number can't include is anything specific to your actual house: the condition of your wiring, water damage behind a wall, or how your local permitting office prices its inspections. Those only show up in an itemized bid from a licensed contractor, which is why this is a starting point, not a replacement for one.</p>
+
+          <h2>Frequently Asked Questions</h2>
+          <h3>How accurate is the SmartRenoCalc estimate?</h3>
+          <p>It's built from published 2026 national renovation cost data, adjusted for your project type, square footage, quality tier, and region. Treat it as a realistic planning range, not a number you can hand a contractor and expect them to match.</p>
+          <h3>Why does my ZIP code change the estimate?</h3>
+          <p>Labor rates, material delivery costs, and permit fees shift by region, sometimes by 30% or more. We apply a regional multiplier based on the first digit of your ZIP code so the estimate reflects your market instead of a national average.</p>
+          <h3>What's the difference between the three quality tiers?</h3>
+          <p>Budget keeps your existing layout with stock materials. Mid-Range adds semi-custom materials and minor layout changes. High-End allows custom materials and structural changes. Each tier carries its own cost range and its own typical resale return.</p>
+          <h3>Does this replace a contractor's quote?</h3>
+          <p>No. Think of it as the number you walk in with, not the number you walk out with. A licensed contractor's bid accounts for your home's actual condition, which no calculator can see from the outside.</p>
+          <h3>Do you save or share my ZIP code or project details?</h3>
+          <p>No. The calculator runs entirely in your browser. Nothing you type is ever sent to a server, whether that's your ZIP code, square footage, or project type.</p>
+          <h3>How often is the cost data updated?</h3>
+          <p>About once a year. Renovation costs shift with material and labor trends, but not fast enough to justify a live pricing feed for what's meant to stay a free, browser-only tool.</p>
+
         </div>
       </div>
     </section>
@@ -373,19 +420,34 @@
           <h2>Renovation Planning Guides</h2>
         </div>
         <div class="blog-grid">
-          <a class="blog-card" href="blog/kitchen-remodeling-savings-2026.html">
+          <a class="blog-card" href="/blog/kitchen-remodeling-savings-2026">
             <h3>10 Ways to Save Money on Kitchen Remodeling in 2026</h3>
             <p>Specific, practical ways to cut your kitchen budget without cutting corners on quality.</p>
             <span class="blog-card__cta">Read the guide →</span>
           </a>
-          <a class="blog-card" href="blog/zip-code-renovation-costs.html">
+          <a class="blog-card" href="/blog/bathroom-remodel-cost">
+            <h3>Bathroom Remodel Cost Breakdown in 2026</h3>
+            <p>Low, mid, and high-end bathroom prices for 2026, and where the money actually goes inside a typical bid.</p>
+            <span class="blog-card__cta">Read the guide →</span>
+          </a>
+          <a class="blog-card" href="/blog/basement-remodel-cost-2026">
+            <h3>How Much Does It Cost to Finish a Basement in 2026?</h3>
+            <p>Per-square-foot basement finishing costs, the five drivers behind the number, and the permits people forget.</p>
+            <span class="blog-card__cta">Read the guide →</span>
+          </a>
+          <a class="blog-card" href="/blog/roof-replacement-cost-2026">
+            <h3>Roof Replacement Cost in 2026 by Material &amp; Size</h3>
+            <p>Real 2026 roofing prices by material and size, plus the repair-vs-replace signs every homeowner should check first.</p>
+            <span class="blog-card__cta">Read the guide →</span>
+          </a>
+          <a class="blog-card" href="/blog/zip-code-renovation-costs">
             <h3>How ZIP Codes Impact Renovation Costs</h3>
             <p>Why the same project can cost 30–40% more depending on where you live.</p>
             <span class="blog-card__cta">Read the guide →</span>
           </a>
-          <a class="blog-card" href="blog/renovation-roi-breakdown.html">
+          <a class="blog-card" href="/blog/renovation-roi-breakdown">
             <h3>ROI Breakdown: Which Home Improvements Add the Most Value</h3>
-            <p>Which renovations actually pay you back at resale — and which don't.</p>
+            <p>Which renovations actually pay you back at resale, and which don't.</p>
             <span class="blog-card__cta">Read the guide →</span>
           </a>
         </div>
@@ -398,20 +460,6 @@
     <ins class="adsbygoogle" style="display:block" data-ad-client=ca-pub-4806220450595674 data-ad-slot="0000000002" data-ad-format="auto" data-full-width-responsive="true"></ins>
   </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> SmartRenoCalc. All estimates are for planning purposes only.</p>
-      </div>
-    </div>
-  </footer>
-
   <div class="sticky-summary-bar" id="sticky-summary-bar">
     <div>
       <div class="sticky-summary-bar__label">Estimated Total</div>
@@ -420,6 +468,8 @@
     <span aria-hidden="true">↑ View details</span>
   </div>
 
-  <script src="script.js" defer></script>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="/global.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+# SmartRenoCalc
+
+> SmartRenoCalc is a free home renovation cost calculator for U.S. homeowners. It gives an instant, ZIP-adjusted planning estimate for kitchen, bathroom, basement, roof, attic, and whole-house projects, using 2026 national cost-per-square-foot data, three quality tiers (Budget, Mid-Range, High-End), and a regional multiplier based on the first digit of the ZIP code.
+
+The calculator runs entirely in the browser: no signup, and nothing the user enters is sent to or stored on a server. Estimates split roughly 45% materials and 55% labor, add a 12% contingency, and include a typical resale-value-recouped figure for the chosen project and tier. They are planning ranges, not contractor quotes.
+
+## Calculator
+
+- [Home Renovation Cost Calculator](https://smartrenocalc.com/): The free ZIP-adjusted estimator, plus an explanation of how estimates are built and an FAQ.
+
+## Guides
+
+- [Renovation Planning Guides](https://smartrenocalc.com/blog): Index of every cost guide on the site.
+- [Full House Renovation Cost in 2026](https://smartrenocalc.com/blog/full-house-renovation-cost-2026): Costs by home size and scope, from cosmetic refresh to full gut, with financing options and ROI.
+- [Window Replacement Cost in 2026](https://smartrenocalc.com/blog/window-replacement-cost-2026): Per-window pricing by material, full-frame vs. insert installs, and the end of the federal window tax credit.
+- [Roof Replacement Cost in 2026](https://smartrenocalc.com/blog/roof-replacement-cost-2026): Pricing by roofing material and roof size, repair-vs-replace signs, and resale ROI.
+- [Basement Finishing Cost in 2026](https://smartrenocalc.com/blog/basement-remodel-cost-2026): Per-square-foot costs by finish tier, the five biggest cost drivers, permits, and ROI.
+- [Bathroom Remodel Cost Breakdown in 2026](https://smartrenocalc.com/blog/bathroom-remodel-cost): Low, mid, and high-end estimates by bathroom type, with an itemized budget breakdown.
+- [10 Ways to Save Money on Kitchen Remodeling in 2026](https://smartrenocalc.com/blog/kitchen-remodeling-savings-2026): Practical ways to cut a kitchen budget without cutting quality.
+- [How ZIP Codes Impact Renovation Costs](https://smartrenocalc.com/blog/zip-code-renovation-costs): The ten regional cost multipliers behind SmartRenoCalc's estimates, with a worked example.
+- [ROI Breakdown: Which Home Improvements Add the Most Value](https://smartrenocalc.com/blog/renovation-roi-breakdown): Resale value recouped by project type and quality tier.
+
+## About
+
+- [About SmartRenoCalc](https://smartrenocalc.com/about-us): Mission, methodology, and independence.
+- [Contact](https://smartrenocalc.com/contact-us): How to reach the team.

@@ -640,11 +640,41 @@ p:last-child { margin-bottom: 0; }
 .contact-card a { font-size: var(--text-lg); font-weight: 600; }
 
 /* ---------------------------------------------------------------------
-   13. Print styles
+   13. Shared components (header injected by global.js, callouts, bylines)
+   --------------------------------------------------------------------- */
+.site-header { min-height: 68px; }
+.nav-list a.is-active { color: var(--color-emerald-700); font-weight: 700; }
+.callout-box {
+  background: var(--color-slate-50);
+  padding: var(--space-6);
+  border-left: 4px solid var(--color-emerald-600);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-8);
+}
+.callout-box h3 { margin-top: 0; }
+.callout-box h2 { margin-top: 0; font-size: var(--text-lg); }
+.article__byline { color: var(--color-slate-500); font-size: var(--text-sm); margin-bottom: var(--space-6); }
+.article__note { font-size: var(--text-sm); color: var(--color-slate-500); }
+.table-scroll { overflow-x: auto; margin-bottom: var(--space-6); }
+.table-scroll .article__table { margin-bottom: 0; }
+
+/* Contractor CTA under the calculator results (UI shell, not wired yet) */
+.contractor-cta {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.contractor-cta h3 { color: var(--color-white); font-size: var(--text-lg); margin-bottom: var(--space-2); }
+.contractor-cta p { color: var(--color-slate-200); font-size: var(--text-sm); margin-bottom: var(--space-4); }
+.contractor-cta .btn[disabled] { opacity: 0.75; cursor: not-allowed; }
+.contractor-cta .btn[disabled]:hover { background: var(--color-emerald-600); }
+
+/* ---------------------------------------------------------------------
+   14. Print styles
    --------------------------------------------------------------------- */
 .print-only { display: none; }
 @media print {
-  .site-header, .nav-list, .ad-slot, #how-it-works, #blog-teaser, .site-footer, .sticky-summary-bar, #calculator {
+  .site-header, .nav-list, .ad-slot, .ad-caption, .hero, #how-it-works, #renovation-guide, #blog-teaser, .site-footer, .sticky-summary-bar, .contractor-cta, .calculator__inputs {
     display: none !important;
   }
   .print-only { display: block !important; }
