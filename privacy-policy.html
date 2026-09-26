@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | SmartRenoCalc</title>
   <meta name="description" content="How SmartRenoCalc handles your data — the calculator runs entirely in your browser and stores nothing.">
-  <link rel="canonical" href="https://smartrenocalc.com/privacy-policy.html">
+  <link rel="canonical" href="https://smartrenocalc.com/privacy-policy">
   <meta name="robots" content="index, follow">
-  <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0JSSSXEYQ"></script>
 <script>
@@ -22,25 +21,16 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4806220450595674"
      crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Smartrenocalc.com" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Smart<span>Reno</span>Calc</a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Calculator</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header id="site-header" class="site-header"></header>
 
   <main class="legal-page">
     <div class="container legal-page__inner">
@@ -71,25 +61,13 @@
       <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal or regulatory reasons. The effective date at the top of this page will always reflect the most recent revision.</p>
 
       <h2>6. Contact Us</h2>
-      <!-- Replace support@smartrenocalc.com with your real inbox before launch -->
-      <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:support@smartrenocalc.com">support@smartrenocalc.com</a>.</p>
+      <!-- The comment markers around this link stop Cloudflare Email Obfuscation from rewriting it, so crawlers see a plain mailto: link. -->
+      <p>If you have questions about this Privacy Policy, contact us at <!--email_off--><a href="mailto:support@smartrenocalc.com">support@smartrenocalc.com</a><!--/email_off-->.</p>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> SmartRenoCalc. All estimates are for planning purposes only.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="/global.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

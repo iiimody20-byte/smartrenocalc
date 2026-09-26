@@ -1,56 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
-  <url>
-    <loc>https://smartrenocalc.com/</loc>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://smartrenocalc.com/</loc><lastmod>2026-09-26</lastmod><priority>1.0</priority></url>
 
-  <!-- Main Pages -->
-  <url>
-    <loc>https://smartrenocalc.com/blog.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/about-us.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/contact-us.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/privacy-policy.html</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/terms-of-service.html</loc>
-    <priority>0.3</priority>
-  </url>
+  <!-- Main pages -->
+  <url><loc>https://smartrenocalc.com/blog</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/about-us</loc><lastmod>2026-09-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://smartrenocalc.com/contact-us</loc><lastmod>2026-09-26</lastmod><priority>0.7</priority></url>
+  <url><loc>https://smartrenocalc.com/privacy-policy</loc><lastmod>2026-09-26</lastmod><priority>0.3</priority></url>
+  <url><loc>https://smartrenocalc.com/terms-of-service</loc><lastmod>2026-09-26</lastmod><priority>0.3</priority></url>
 
-  <!-- Blog Posts -->
-  <url>
-    <loc>https://smartrenocalc.com/blog/kitchen-remodeling-savings-2026.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/blog/renovation-roi-breakdown.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartrenocalc.com/blog/zip-code-renovation-costs.html</loc>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://smartrenocalc.com/blog/bathroom-remodel-cost.html</loc>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://smartrenocalc.com/blog/basement-remodel-cost-2026.html</loc>
-    <priority>0.8</priority>
-</url>
-<url>
-  <loc>https://smartrenocalc.com/blog/roof-replacement-cost-2026.html</loc>
-  <priority>0.8</priority>
-</url>
+  <!-- Blog posts -->
+  <url><loc>https://smartrenocalc.com/blog/kitchen-remodeling-savings-2026</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/renovation-roi-breakdown</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/zip-code-renovation-costs</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/bathroom-remodel-cost</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/basement-remodel-cost-2026</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/roof-replacement-cost-2026</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/window-replacement-cost-2026</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://smartrenocalc.com/blog/full-house-renovation-cost-2026</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
 </urlset>

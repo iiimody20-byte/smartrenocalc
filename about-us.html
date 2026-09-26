@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | SmartRenoCalc</title>
   <meta name="description" content="SmartRenoCalc's mission is to give homeowners instant, unbiased renovation cost clarity before they call a contractor.">
-  <link rel="canonical" href="https://smartrenocalc.com/about-us.html">
+  <link rel="canonical" href="https://smartrenocalc.com/about-us">
   <meta name="robots" content="index, follow">
-  <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0JSSSXEYQ"></script>
 <script>
@@ -22,38 +21,29 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4806220450595674"
      crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Smartrenocalc.com" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Smart<span>Reno</span>Calc</a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Calculator</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header id="site-header" class="site-header"></header>
 
   <main class="legal-page">
     <div class="container legal-page__inner">
       <h1>About SmartRenoCalc</h1>
 
-      <p>Most homeowners start planning a renovation with the same question: "What is this actually going to cost?" Getting a real answer usually means calling three or four contractors, waiting days for callbacks, and sitting through in-home estimates before you have a single number to work with. SmartRenoCalc exists to give you that number first — instantly, privately, and for free — so you can walk into every contractor conversation already knowing what a reasonable budget looks like.</p>
+      <p>Most homeowners start planning a renovation with the same question: "What is this actually going to cost?" Getting a real answer usually means calling three or four contractors, waiting days for callbacks, and sitting through in-home estimates before you have a single number to work with. SmartRenoCalc exists to give you that number first. It's instant, private, and free, so you can walk into every contractor conversation already knowing what a reasonable budget looks like.</p>
 
       <h2>Our Mission</h2>
-      <p>We built SmartRenoCalc to close the information gap between "I'm thinking about renovating" and "I know what to budget." Whether you're planning a kitchen refresh or weighing a full house renovation, our goal is to give you an honest, unbiased starting estimate before you spend a dollar or make a single phone call.</p>
+      <p>We built SmartRenoCalc to close the gap between "I'm thinking about renovating" and "I know what to budget." A kitchen refresh and a full house renovation start from the same place: no idea what a reasonable number looks like. Our goal is one honest, unbiased starting estimate before you spend a dollar or make a single phone call.</p>
 
       <h2>Our Methodology</h2>
-      <p>Every estimate on this site is built from published 2026 national industry renovation cost data — the same category of cost-per-square-foot benchmarks used by remodeling publications and contractor associations. We apply three adjustments to that baseline: your project type, your selected quality tier (Budget, Mid-Range, or High-End), and a regional cost multiplier based on your ZIP code, since labor and material costs vary meaningfully across the United States. We review and refresh our underlying cost data on a regular basis to keep it aligned with current market conditions.</p>
-      <p>Every number you see is a planning-stage range, not a bid. Actual costs always depend on the specific condition of your home, local permitting requirements, and the contractor you ultimately choose.</p>
+      <p>Every estimate on this site is built from published 2026 national industry renovation cost data — the same category of cost-per-square-foot benchmarks used by remodeling publications and contractor associations. We apply three adjustments to that baseline: your project type, your selected quality tier (Budget, Mid-Range, or High-End), and a regional cost multiplier based on your ZIP code, since labor and material costs vary meaningfully across the United States. We review and refresh the underlying cost data about once a year to keep it aligned with current market conditions.</p>
+      <p>Every number you see is a planning-stage range, not a bid. Actual costs always depend on the specific condition of your home, local permitting requirements, and the contractor you ultimately choose. If you want to see how those adjustments play out, our <a href="/blog/zip-code-renovation-costs">regional pricing guide</a> lists every multiplier, and the <a href="/blog/renovation-roi-breakdown">ROI breakdown</a> shows what each project type tends to return at resale.</p>
 
       <h2>Independence</h2>
       <p>SmartRenoCalc is an independent, self-funded tool. We are not affiliated with, sponsored by, or compensated by any contractor, retailer, lender, or home improvement brand. The site is supported by advertising, which never influences the estimates we calculate.</p>
@@ -63,20 +53,8 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> SmartRenoCalc. All estimates are for planning purposes only.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="/global.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>
